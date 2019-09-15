@@ -1,0 +1,45 @@
+        Este Proyecto es una Prueba de uso del microcontrolador ESP32 (Varios ejemplos sencillos)
+        -----------------------------------------------------------------------------------------
+
+Se desarrollan varios ejemplos de código que seran gestionados mediante la directiva #define. Los
+códigos de los ejemplos han sido sacados de internet y retocados por mi para ajustarse a mis 
+necesidades. Se utilizará Platformio como IDE para programar el ESP32.
+
+Es conveniente tener activo un solo ejemplo para que se ejecute de forma correcta el código.
+
+Códigos posibles a ejecutar:
+
+1.- Blink. Parpadeo de LED_BUILTIN en un intervalo configurable que se pasa a través de la llamada a la 
+    función Blink (unsigned t). 
+    Función dentro del archivo "funciones.h".
+    **** Para ejecutar descomentar: //#define Prueba_Blink
+
+2.- Scaner_WIFI. Escaneo de rede WIFI. Se llama a través de la función Scaner_WIFI(). 
+    Función dentro del archivo "funciones.h".
+    **** Para ejecutar descomentar: //#define Prueba_WIFI_scan
+
+3.- Hall (Variaciones del campo mágetico). Uso del detector Hall interno del ESP32. Se llama a través 
+    de la función Prueba_Hall(). 
+    Función dentro del archivo "funciones.h".
+    **** Para ejecutar descomentar: //#define Prueba_Sensor_Hall
+
+4.- Pulsador capacitivo. Uso de las entradas "touch" detector del ESP32. Se llama a través de la función 
+    Pusador_Capacitivo(int pintouch, int tarado). Como argumentos se pasan el pin touch a usar y el tarado
+    inferior al cual se activa el LED_BUILTIN.
+    Función dentro del archivo "funciones.h".
+    **** Para ejecutar descomentar: //#define Prueba_Pulsador_Capacitivo
+
+5.- Temperatura ESP32. Uso del sensor interno de temperatura del ESP32. Se llama a través  de la función 
+    Temp_ESP() e indica la temperatura de funcionamiento del ESP32. 
+    Función dentro del archivo "funciones.h".
+    **** Para ejecutar descomentar: //#define Prueba_Sensor_Temperatura
+
+6.- Escaner BLE. Escaneo de dispositivos BLE. Se llama a través  de la función BLE_Scanning(). 
+    Función dentro del archivo "BLE_scan.h".
+    **** Para ejecutar descomentar: //#define Prueba_BLE_scan
+
+7.- Servidor BLE. Se configura el ESP32 como servidor BLE con un servicio de usuario que permite que se interatue 
+    con el servidor (Write / Read). Mediante la app para android BLE Scanner comunicamos el movil con el servidor
+    BLE del ESP32 y escribimos texto que se reenvia al puerto serie. Se llama a través de la función BLE_server(). 
+    Función dentro del archivo "BLE_servidor.h".
+    **** Para ejecutar descomentar: //#define Prueba_BLE_servidor

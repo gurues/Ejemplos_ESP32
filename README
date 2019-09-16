@@ -40,6 +40,10 @@ Códigos posibles a ejecutar:
 
 7.- Servidor BLE. Se configura el ESP32 como servidor BLE con un servicio de usuario que permite que se interatue 
     con el servidor (Write / Read). Mediante la app para android BLE Scanner comunicamos el movil con el servidor
+<<<<<<< HEAD
     BLE del ESP32 y escribimos texto que se reenvia al puerto serie. Se llama a través de la función BLE_server(). 
+=======
+    BLE el ESP32 y escribimos testo que se reenvia al puerto serie. Se llama a través de la función BLE_server(). 
+>>>>>>> 37d8ae4e13143cd3182027999156c843ae340875
     Función dentro del archivo "BLE_servidor.h".
     **** Para ejecutar descomentar: //#define Prueba_BLE_servidor
